@@ -161,7 +161,6 @@ const hawk = extend(PowerTurret, "hawk", {
     shootType: hawkOrb,
     recoilAmount: 4,
     range: 100,
-    heatColor: Color.valueOf("ff0000"),
 });
 
 // end hawk
