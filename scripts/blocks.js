@@ -1,4 +1,5 @@
 const multiTurretLib = require("multiTurretType")
+const effectLib = require("effects")
 
 // luxDuck's content
 
@@ -56,7 +57,7 @@ const crowLaser = extend(LaserBulletType, {
     hitSize : 16,
     lifetime : 36,
     length : 180,
-    width : 10,
+    width : 7,
     sideLength: 0,
     sideWidth: 0,
     sideAngle: 0,
