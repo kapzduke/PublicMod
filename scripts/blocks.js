@@ -67,8 +67,8 @@ crow.buildType = () => extend(PowerTurret.PowerTurretBuild, crow, {
     creload : 0,
     updateTile(){
         this.super$updateTile();
-        let rx = this.x
-        let ry = this.y + 18
+        let rx = this.x + math.sin(this.rotation) * 10
+        let ry = this.y + math.cos(this.rotation) * 10
 
         if(this.isShooting() && this.power.status > 0.5 && this.hasAmmo() && this.creload >= 10){
             this.creload = 0
