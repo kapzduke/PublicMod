@@ -7,9 +7,10 @@ const ripBackfire = extend(BasicBulletType, {
     height: 18,
 
     damage: 30,
-    speed: 6,
+    speed: 3,
+    shrinkY: 0,
     spin: -3,
-    lifetime : 20,
+    lifetime : 40,
     sprite: "large-bomb",
     pierce: true,
 
@@ -23,9 +24,10 @@ const ripDisk = extend(BasicBulletType, {
     height: 18,
 
     damage : 30,
-    speed : 6,
+    speed : 3,
+    shrinkY: 0,
     spin: 3,
-    lifetime : 20,
+    lifetime : 40,
     sprite: "large-bomb",
     pierce : true,
 
