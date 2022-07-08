@@ -165,10 +165,10 @@ const vultureSpear = extend(LaserBulletType, {
     pierceCap: 3,
     hitSize : 16,
     speed: 3,
-    lifetime : 25,
+    lifetime : 60,
     length : 50,
-    width : 7,
-    sideAngle: -25,
+    width : 14,
+    sideAngle: 145,
 });
 
 const vulture = extend(PowerTurret, "vulture", {
