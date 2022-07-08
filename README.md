@@ -22,6 +22,8 @@ Editing README.md - Action for breaking rule: Warning
 
 luxDuck - Creator
 
+RainDarkBow - First contributor!
+
 # Banned
 
 Nobody!
