@@ -1,6 +1,6 @@
 {
 	"name": "Crow",
-	"description": "Fires a big laser bolt with small lasers while reloading.",
+	"description": "By luxDuck. An upgrade to Robin. Fires a big laser bolt with small lasers while reloading.",
 	"size": 2,
 	"health": 2050,
 	"reloadTime" : 220,
@@ -28,7 +28,7 @@
 		"drawSize": 100,
 		"lightColor": "ffffff",
 		"hitColor":"ffffff",
-		"colors": ["ffe18f", "de9458", "ffffff"]
+		"colors": ["e56666", "e56666", "ffffff"]
 	},
 	"category": "turret",
 	"research": "robin",
