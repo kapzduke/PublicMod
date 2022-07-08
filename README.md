@@ -2,10 +2,6 @@
 
 Star the mod and I will add you as a contributor.
 
-# Contributors
-
-luxDuck
-
 # Rules for contributors
 
 Only delete or edit content if you have permission, or if you made the content. - Warning
