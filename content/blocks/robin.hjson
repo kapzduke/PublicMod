@@ -1,0 +1,17 @@
+type: PowerTurret
+targetAir: true
+reloadTime: 65
+range: 90
+shootSound: bigshot
+heatColor: ff0000
+powerUse: 1.6
+name: Robin
+description: By luxDuck. Fires a small laser bolt.
+shootShake: 1
+category: turret
+research: duo
+requirements: [
+  copper/25
+  lead/50
+  graphite/100
+]

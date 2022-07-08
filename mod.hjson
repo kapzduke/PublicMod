@@ -1,0 +1,6 @@
+name: "publicMod"
+displayName: Public Mod
+description: A mod that luxDuck and other people are working on. Star the mod for access.
+author: luxDuck and others
+version: 0.1.0
+minGameVersion: 130.1
