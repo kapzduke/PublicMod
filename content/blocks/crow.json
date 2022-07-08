@@ -18,8 +18,7 @@
 	"shootType": {
 		"type": "ContinuousLaserBulletType",
 		"damage": 120,
-		"pierce": true,
-		"pierceCap": 3,
+		"pierce": false,
 		"absorbable": true
 		"length": 12,
                 "speed": 3,
