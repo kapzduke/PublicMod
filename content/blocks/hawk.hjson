@@ -1,4 +1,3 @@
-type: PowerTurret
 targetAir: true
 reloadTime: 65
 range: 90
