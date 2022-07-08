@@ -64,6 +64,7 @@ const ripDisk = extend(BasicBulletType, {
 
 const rip = extend(PowerTurret, "rip", {
     shootType: ripDisk,
+    recoilAmount: 4,
 });
 
 // crow
