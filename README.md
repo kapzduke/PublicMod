@@ -20,9 +20,7 @@ Please try to help other contributors if they need help with coding!
 
 luxDuck - Creator
 
-RainDarkBow - First contributor!
-
-12three7
+12three7 - Has not accepted invite yet
 
 # Banned
 
