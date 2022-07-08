@@ -125,8 +125,8 @@ const hawkOrb = extend(MissileBulletType, {
 
     damage : 75,
     speed : 1,
-    shrinkY: -0.7,
-    shrinkX: -0.7,
+    shrinkY: -1.3,
+    shrinkX: -1.3,
     lifetime : 100,
     sprite: "circle-bullet",
     pierce : true,
