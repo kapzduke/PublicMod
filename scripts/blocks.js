@@ -1,5 +1,24 @@
 const multiTurretLib = require("multiTurretType")
-const effectLib = require("effects")
+
+// effects
+
+const redBlast = new Effect(40, 100, e => {
+    Draw.color(Color.valueOf("e56666"));
+    Lines.stroke(e.fout() * 2);
+    Lines.circle(e.x, e.y, 4 + e.finpow() * 20);
+
+    Draw.color(Color.valueOf("e56666"));
+    for(let i = 45; i < 4; i++){
+        Drawf.tri(e.x, e.y, 6, 40 * e.fout(), i*90);
+    }
+
+    Draw.color();
+    for(let i = 45; i < 4; i++){
+        Drawf.tri(e.x, e.y, 3, 12 * e.fout(), i*90);
+    }
+});
+
+// end effects
 
 // luxDuck's content
 
@@ -72,7 +91,7 @@ crow.buildType = () => extend(PowerTurret.PowerTurretBuild, crow, {
         if(this.isShooting() && this.power.status > 0.5 && this.hasAmmo() && this.creload >= 13){
             this.creload = 0
             crowLaser.create(this, this.team, this.x, this.y, this.rotation)
-            effectLib.redBlast.at(this.x, this.y)
+            redBlast.at(this.x, this.y)
             Sounds.bigshot.at(this)
         }
         else{
