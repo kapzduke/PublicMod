@@ -4,9 +4,22 @@ reloadTime: 65
 range: 90
 shootSound: bigshot
 heatColor: ff0000
+shootType: {
+type: BasicBulletType
+frontColor: ffffff
+backColor: e56666
+width: 3
+height: 5
+damage: 60
+status: burning
+statusDuration: 75
+speed: 3
+lifetime: 30
+shrinkY: 0
+}
 powerUse: 1.6
 name: Robin
-description: By luxDuck. Fires a small laser bolt.
+description: By luxDuck. Fires a small laser bolt. (work in progress)
 shootShake: 1
 category: turret
 research: duo
