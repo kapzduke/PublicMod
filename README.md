@@ -1,6 +1,4 @@
-# Public Mod
-
-![image](https://user-images.githubusercontent.com/108199623/178052696-e9840fc7-573d-4a50-98c8-007b756a2da4.png)
+# ![image](https://user-images.githubusercontent.com/108199623/178052696-e9840fc7-573d-4a50-98c8-007b756a2da4.png)
 
 Star the mod and I will add you as a contributor.
 
