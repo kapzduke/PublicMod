@@ -106,8 +106,7 @@ crow.buildType = () => extend(PowerTurret.PowerTurretBuild, crow, {
 // hawk
 
 const hawkOrbTrail = extend(WaveEffect, {
-    sides: 8,
-    sizeFrom: 16,
+    sizeFrom: 6,
     sizeTo: 0,
     lifetime: 30,
     strokeFrom: 0,
