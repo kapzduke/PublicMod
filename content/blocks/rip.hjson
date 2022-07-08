@@ -6,7 +6,7 @@ range: 150
 shootSound: shotgun
 powerUse: 3.4
 name: Rip
-description: By luxDuck. Fires an energy disk that loops around back to the turret. (WIP)
+description: By luxDuck. Fires an energy disk that loops around back to the turret.
 shootShake: 3
 category: turret
 research: lancer
