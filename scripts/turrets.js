@@ -10,7 +10,7 @@ const ripBackfire = extend(BasicBulletType, {
     speed: 6,
     spin: -3
     lifetime : 20,
-    sprite: "large-bomb"
+    sprite: "large-bomb",
     pierce: true,
 
     despawnEffect: Fx.hitLancer,
