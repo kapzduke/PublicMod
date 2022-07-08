@@ -14,8 +14,6 @@ Inside the description of your content, please label your username. e.g: By rand
 
 Please try to help other contributors if they need help with coding!
 
-Editing README.md - Action for breaking rule: Warning
-
 4 Warnings = Ban!
 
 # Contributors
