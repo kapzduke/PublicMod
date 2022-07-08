@@ -1,0 +1,5 @@
+# Contributors
+
+luxDuck - Creator
+
+# Banned
