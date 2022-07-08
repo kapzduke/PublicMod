@@ -24,7 +24,7 @@ const redBlast = new Effect(40, 100, e => {
 
 // rip
 
-const ripBackfire = extend(BasicBulletType, {
+const ripDiskBack = extend(BasicBulletType, {
     width: 18,
     height: 18,
 
@@ -58,7 +58,7 @@ const ripDisk = extend(BasicBulletType, {
     backColor  : Color.valueOf("33AEDA"),
 
     despawned(b){
-        ripBackfire.create(b, b.x, b.y, b.rotation() - 180, 1, 1);
+        ripDiskBack.create(b, b.x, b.y, b.rotation() - 180, 1, 1);
     }
 });
 
