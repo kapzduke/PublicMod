@@ -48,6 +48,38 @@ const rip = extend(PowerTurret, "rip", {
 
 // crow
 
+const crowLaser = extend(LaserBulletType, {
+    colors : [Color.valueOf("e56666"),Color.valueOf("e56666"),Color.valueOf("ffffff")],
+    hitEffect : Fx.hitMeltdown,
+    despawnEffect : Fx.none,
+    damage: 65,
+    hitSize : 16,
+    lifetime : 36,
+    length : 180,
+    width : 10,
+    sideLength: 0,
+    sideWidth: 0,
+    sideAngle: 0,
+});
 
+const crow = extend(PowerTurret, "crow", {});
+crow.buildType = () => extend(PowerTurret.PowerTurretBuild, crow, {
+    creload : 0,
+    updateTile(){
+        this.super$updateTile();
+        let rx = this.x
+        let ry = this.y + 18
+
+        if(this.isShooting() && this.power.status > 0.5 && this.hasAmmo() && this.creload >= 10){
+            this.creload = 0
+            crowLaser.create(this, this.team, rx, ry, this.rotation)
+            Fx.absorb.at(rx, ry)
+            Sounds.bigshot.at(this)
+        }
+        else{
+            if(this.creload < 10){this.creload += 1} 
+        }
+    },
+});
 
 // end luxDuck's content
