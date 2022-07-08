@@ -1,5 +1,6 @@
 type: PowerTurret
 targetAir: true
+size: 2
 reloadTime: 180
 range: 120
 shootSound: shotgun
