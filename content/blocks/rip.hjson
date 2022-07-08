@@ -10,6 +10,8 @@ description: By luxDuck. Fires an energy disk that loops around back to the turr
 shootShake: 3
 category: turret
 research: lancer
+coolantMultiplier: 0
+canOverdrive: false
 requirements: [
   copper/70
   lead/25
