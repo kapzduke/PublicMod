@@ -1,0 +1,18 @@
+type: PowerTurret
+targetAir: true
+reloadTime: 65
+range: 90
+shootSound: laser
+powerUse: 1.6
+name: Hawk
+description: By luxDuck. An upgrade to the Crow. Fires an orb that slowly gets bigger, then explodes.
+shootShake: 1
+category: turret
+research: crow
+requirements: [
+  copper/250
+  lead/500
+  graphite/1000
+  titanium/3000
+  silicon/1050
+]
