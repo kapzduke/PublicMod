@@ -1,6 +1,7 @@
+/*From ADC by 3Snake3.*/
+
 module.exports = {
   newWeapon(b, n){
-    /*Notes: Too lazy to do charging, or continuous.*/
     const mount = {
       x: 0,
       y: 0,
