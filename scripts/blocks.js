@@ -68,14 +68,14 @@ crow.buildType = () => extend(PowerTurret.PowerTurretBuild, crow, {
     updateTile(){
         this.super$updateTile();
 
-        if(this.isShooting() && this.power.status > 0.5 && this.hasAmmo() && this.creload >= 20){
+        if(this.isShooting() && this.power.status > 0.5 && this.hasAmmo() && this.creload >= 13){
             this.creload = 0
             crowLaser.create(this, this.team, this.x, this.y, this.rotation)
-            Fx.absorb.at(rx, ry)
+            Fx.hitMeltdown.at(this.x, this.y)
             Sounds.bigshot.at(this)
         }
         else{
-            if(this.creload < 20){this.creload += 1} 
+            if(this.creload < 13){this.creload += 1} 
         }
     },
 });
