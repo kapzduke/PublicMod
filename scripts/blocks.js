@@ -1,3 +1,5 @@
+const multiTurretLib = require("multiTurretType")
+
 // luxDuck's content
 
 // rip
@@ -45,5 +47,26 @@ const rip = extend(PowerTurret, "rip", {
 });
 
 // crow
+
+const crowBeam = extend(SapBulletType, {
+	sapStrength: 0.87,
+	damage: 60,
+	lifetime: 20,
+	length: 250,
+	color: Color.valueOf("e56666"),
+	hitColor: Color.valueOf("e56666"),
+	statusDuration: 280,
+	width: 0.86
+});
+
+const crowBeamMount = multiTLib.newWeapon(crowBeam, "");
+unoMount.reloadTime = 45;
+unoMount.ammoPerShot = 5;
+unoMount.x = 2.75;
+unoMount.y = 2.75;
+unoMount.shootY = 13/4;
+unoMount.recoilAmount = 1;
+unoMount.range = 9 * 8;
+unoMount.title = "Uno"
 
 // end luxDuck's content
