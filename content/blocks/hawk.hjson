@@ -7,6 +7,7 @@ name: Hawk
 description: By luxDuck. An upgrade to the Crow. Fires an orb that slowly gets bigger, then explodes.
 shootShake: 1
 category: turret
+heatColor: ff0000
 research: crow
 requirements: [
   copper/250
