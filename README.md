@@ -15,3 +15,11 @@ Inside the description of blocks, please label your username. e.g: By randomcode
 Please try to help other contributors if they need help with coding!
 
 4 warnings = ban!
+
+# Contributors
+
+luxDuck - Creator
+
+# Banned
+
+Nobody!
