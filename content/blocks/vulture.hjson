@@ -1,0 +1,19 @@
+targetAir: true
+size: 2
+health: 1450
+reloadTime: 180
+range: 150
+shootSound: laser
+powerUse: 7.8
+name: Vulture
+description: By luxDuck. An upgrade to Hawk. Fires an energy spear.
+shootShake: 3
+category: turret
+research: hawk
+requirements: [
+  copper/700
+  lead/3000
+  graphite/300
+  silicon/1050
+  phase-fabric/2000
+]
