@@ -1,6 +1,8 @@
 # Public Mod
-Some people are working on this
 Star the mod and I will add you as a contributor.
+
+# Contributors
+luxDuck
 
 # Rules for contributors
 Only delete content if you have permission, or if you made the content.
