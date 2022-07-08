@@ -105,16 +105,6 @@ crow.buildType = () => extend(PowerTurret.PowerTurretBuild, crow, {
 // end crow
 // hawk
 
-const hawkOrbTrail = extend(WaveEffect, {
-    sizeFrom: 6,
-    sizeTo: 0,
-    lifetime: 30,
-    strokeFrom: 0,
-    strokeTo: 4,
-    colorFrom: Color.valueOf("e56666"),
-    colorTo: Color.valueOf("ffffff"),
-});
-
 const hawkOrbBeam = extend(ShrapnelBulletType, {
     width : 10,
     length: 40,
@@ -142,7 +132,9 @@ const hawkOrb = extend(MissileBulletType, {
     pierce : true,
 
     despawnEffect : redBlast,
-    trailEffect: hawkOrbTrail,
+    trailColor: Color.valueOf("e56666"),
+    trailWidth: 3,
+    trailLength: 30,
     weaveScale: 0,
     weaveMag: 0,
     trailChance: 1,
