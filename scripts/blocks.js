@@ -128,6 +128,7 @@ const hawkOrb = extend(MissileBulletType, {
     shrinkY: -1.3,
     shrinkX: -1.3,
     lifetime : 100,
+    homingPower: 2,
     sprite: "circle-bullet",
     pierce : true,
 
@@ -144,15 +145,38 @@ const hawkOrb = extend(MissileBulletType, {
 
     fragBullet: hawkOrbBeam,
     fragBullets: 6,
-    fragCone: 360
+    fragCone: 75
 });
 
 const hawk = extend(PowerTurret, "hawk", {
     shootType: hawkOrb,
     recoilAmount: 4,
-    range: 200,
+    range: 150,
 });
 
 // end hawk
+// vulture
+
+const vultureSpear = extend(LaserBulletType, {
+    colors : [Color.valueOf("e56666"),Color.valueOf("e56666"),Color.valueOf("ffffff")],
+    hitEffect : Fx.hitMeltdown,
+    despawnEffect : Fx.massiveExplosion,
+    damage: 120,
+    pierceCap: 3,
+    hitSize : 16,
+    speed: 3,
+    lifetime : 25,
+    length : 50,
+    width : 7,
+    sideAngle: -25,
+});
+
+const vulture = extend(PowerTurret, "vulture", {
+    shootType: vultureSpear,
+    recoilAmount: 4,
+    range: 150,
+});
+
+// end vulture
 
 // end luxDuck's content
