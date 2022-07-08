@@ -107,7 +107,7 @@ crow.buildType = () => extend(PowerTurret.PowerTurretBuild, crow, {
 
 const hawkOrbEffect = extend(WaveEffect, {
     sides: 8,
-    sizeFrom: 8,
+    sizeFrom: 16,
     sizeTo: 0,
     lifetime: 100,
     strokeFrom: 0,
@@ -130,37 +130,37 @@ const hawkOrbBeam = extend(ShrapnelBulletType, {
     backColor  : Color.valueOf("e56666"),
 });
 
-const hawkOrb = extend(BasicBulletType, {
+const hawkOrb = extend(MissileBulletType, {
     width : 6,
     height: 6,
 
     damage : 75,
     speed : 1,
-    shrinkY: -0.2,
-    shrinkX: -0.2,
+    shrinkY: -0.4,
+    shrinkX: -0.4,
     lifetime : 100,
     sprite: "circle-bullet",
     pierce : true,
 
     despawnEffect : redBlast,
     trailEffect: hawkOrbEffect,
+    weaveScale: 0,
+    weaveMag: 0,
     trailSpacing: 99999,
     parentizeEffects: true,
     hitEffect: Fx.none,
     frontColor : Color.valueOf("e56666"),
     backColor  : Color.valueOf("e56666"),
 
-    despawned(b){
-        for(let i = 0; i < Mathf.range(3, 7); i++){
-            hawkOrbBeam.create(b, b.x, b.y, Mathf.range(0, 360));
-        }
-    }
+    fragBullet: hawkOrbBeam,
+    fragBullets: 6,
+    fragCone: 360
 });
 
 const hawk = extend(PowerTurret, "hawk", {
     shootType: hawkOrb,
     recoilAmount: 4,
-    range: 100,
+    range: 200,
 });
 
 // end hawk
