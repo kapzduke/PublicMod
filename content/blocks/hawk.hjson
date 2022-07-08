@@ -1,6 +1,5 @@
 targetAir: true
 reloadTime: 180
-range: 90
 shootSound: release
 powerUse: 6.2
 name: Hawk
