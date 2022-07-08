@@ -15,24 +15,23 @@ const ripBackfire = extend(BasicBulletType, {
 
     despawnEffect: Fx.hitLancer,
     frontColor: Color.valueOf("ffffff"),
-    backColor: Color.valueOf("ffaa5f"),
+    backColor: Color.valueOf("33AEDA"),
 });
 
 const ripDisk = extend(BasicBulletType, {
-    width: 18,
+    width : 18,
     height: 18,
 
-    damage: 30,
-    speed: 6,
+    damage : 30,
+    speed : 6,
     spin: 3,
-    lifetime: 20,
-    sprite: "large-bomb"
-    pierce: true,
+    lifetime : 20,
+    sprite: "large-bomb",
+    pierce : true,
 
-    despawnEffect: Fx.hitLancer,
-    shootEffect: Fx.hitLancer,
-    frontColor: Color.valueOf("ffffff"),
-    backColor: Color.valueOf("ffaa5f"),
+    despawnEffect : Fx.hitLancer,
+    frontColor : Color.valueOf("ffffff"),
+    backColor  : Color.valueOf("33AEDA"),
 
     despawned(b){
         ripBackfire.create(b, b.x, b.y, b.rotation() - 180, 1, 1);
