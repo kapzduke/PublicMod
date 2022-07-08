@@ -1,0 +1,37 @@
+{
+	"name": "Crow",
+	"description": "Fires a big laser bolt with small lasers while reloading.",
+	"size": 4,
+	"health": 2050,
+	"reloadTime" : 220,
+	"range": 200,
+	"shootSound": "laser",
+	"shootDuration" : 40,
+	"shootShake": 6,
+	"shots": 1,
+	"velocityInaccuracy": 0.1,
+	"recoilAmount" : 4,
+	"shootLength": 0,
+	"powerUse": 24,
+	"targetAir" : true, 
+	"targetGround" : true,
+	"shootType": {
+		"type": "ContinuousLaserBulletType",
+		"damage": 120,
+		"length": 12,
+                "speed": 3,
+		"width": 6,
+		"lifetime": 90,
+		"drawSize": 100,
+		"lightColor": "ffffff",
+		"hitColor":"ffffff",
+		"colors": ["ffe18f", "de9458", "ffffff"]
+	},
+	"category": "turret",
+	"research": "robin",
+	"requirements": [ 
+		{ "item": "titanium", "amount": 800 },
+		{ "item": "lead", "amount": 300 },
+		{ "item": "copper", "amount": 30 }
+	]
+}
