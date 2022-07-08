@@ -67,6 +67,7 @@ const rip = extend(PowerTurret, "rip", {
     recoilAmount: 4,
 });
 
+// end rip
 // crow
 
 const crowLaser = extend(LaserBulletType, {
@@ -100,5 +101,7 @@ crow.buildType = () => extend(PowerTurret.PowerTurretBuild, crow, {
         }
     },
 });
+
+// end crow
 
 // end luxDuck's content
