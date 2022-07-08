@@ -72,7 +72,7 @@ crow.buildType = () => extend(PowerTurret.PowerTurretBuild, crow, {
         if(this.isShooting() && this.power.status > 0.5 && this.hasAmmo() && this.creload >= 13){
             this.creload = 0
             crowLaser.create(this, this.team, this.x, this.y, this.rotation)
-            Fx.hitMeltdown.at(this.x, this.y)
+            effectLib.redBlast.at(this.x, this.y)
             Sounds.bigshot.at(this)
         }
         else{
