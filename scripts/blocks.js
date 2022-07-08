@@ -103,5 +103,66 @@ crow.buildType = () => extend(PowerTurret.PowerTurretBuild, crow, {
 });
 
 // end crow
+// hawk
+
+const hawkOrbEffect = extend(WaveEffect, {
+    sides: 8,
+    sizeFrom: 8,
+    sizeTo: 0,
+    lifetime: 100,
+    strokeFrom: 0,
+    strokeTo: 4,
+    colorFrom: Color.valueOf("e56666"),
+    colorTo: Color.valueOf("ffffff"),
+});
+
+const hawkOrbBeam = extend(ShrapnelBulletType, {
+    width : 10,
+    length: 40,
+    serrations: 6,
+
+    damage : 105,
+    lifetime : 20,
+    pierce : true,
+
+    hitEffect: Fx.hitLancer,
+    fromColor : Color.valueOf("ffffff"),
+    backColor  : Color.valueOf("e56666"),
+});
+
+const hawkOrb = extend(BasicBulletType, {
+    width : 18,
+    height: 18,
+
+    damage : 75,
+    speed : 1,
+    shrinkY: -0.5,
+    shrinkX: -0.5,
+    spin: 0.3,
+    lifetime : 100,
+    sprite: "circle-bullet",
+    pierce : true,
+
+    despawnEffect : redBlast,
+    shootEffect : hawkOrbEffect,
+    parentizeEffects: true,
+    hitEffect: Fx.none,
+    frontColor : Color.valueOf("e56666"),
+    backColor  : Color.valueOf("e56666"),
+
+    despawned(b){
+        for(let i = 0; i < Mathf.range(3, 7); i++){
+            hawkOrbBeam.create(b, b.x, b.y, Mathf.range(0, 360));
+        }
+    }
+});
+
+const hawk = extend(PowerTurret, "hawk", {
+    shootType: hawkOrb,
+    recoilAmount: 4,
+    range: 100,
+});
+
+// end hawk
 
 // end luxDuck's content
