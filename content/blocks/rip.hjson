@@ -1,8 +1,8 @@
-type: PowerTurret
 targetAir: true
 size: 2
+health: 1450
 reloadTime: 180
-range: 120
+range: 150
 shootSound: shotgun
 powerUse: 3.4
 name: Rip
