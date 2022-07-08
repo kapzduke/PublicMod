@@ -127,7 +127,7 @@ const hawkOrbBeam = extend(ShrapnelBulletType, {
 
     hitEffect: Fx.hitLancer,
     fromColor : Color.valueOf("e56666"),
-    backColor  : Color.valueOf("e56666"),
+    toColor  : Color.valueOf("e56666"),
 });
 
 const hawkOrb = extend(MissileBulletType, {
@@ -136,8 +136,8 @@ const hawkOrb = extend(MissileBulletType, {
 
     damage : 75,
     speed : 1,
-    shrinkY: -0.4,
-    shrinkX: -0.4,
+    shrinkY: -0.7,
+    shrinkX: -0.7,
     lifetime : 100,
     sprite: "circle-bullet",
     pierce : true,
