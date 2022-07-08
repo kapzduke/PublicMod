@@ -8,7 +8,7 @@ const ripBackfire = extend(BasicBulletType, {
 
     damage: 30,
     speed: 6,
-    spin: -3
+    spin: -3,
     lifetime : 20,
     sprite: "large-bomb",
     pierce: true,
@@ -24,13 +24,13 @@ const ripDisk = extend(BasicBulletType, {
 
     damage: 30,
     speed: 6,
-    spin: 3
+    spin: 3,
     lifetime: 20,
     sprite: "large-bomb"
     pierce: true,
 
     despawnEffect: Fx.hitLancer,
-    shootEffect: Fx.hitLancer
+    shootEffect: Fx.hitLancer,
     frontColor: Color.valueOf("ffffff"),
     backColor: Color.valueOf("ffaa5f"),
 
