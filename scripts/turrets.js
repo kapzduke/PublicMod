@@ -6,7 +6,7 @@ const ripBackfire = extend(BasicBulletType, {
     width: 18,
     height: 18,
 
-    damage: 30,
+    damage: 60,
     speed: 3,
     shrinkY: 0,
     spin: -3,
@@ -23,7 +23,7 @@ const ripDisk = extend(BasicBulletType, {
     width : 18,
     height: 18,
 
-    damage : 30,
+    damage : 60,
     speed : 3,
     shrinkY: 0,
     spin: 3,
