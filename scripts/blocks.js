@@ -126,25 +126,25 @@ const hawkOrbBeam = extend(ShrapnelBulletType, {
     pierce : true,
 
     hitEffect: Fx.hitLancer,
-    fromColor : Color.valueOf("ffffff"),
+    fromColor : Color.valueOf("e56666"),
     backColor  : Color.valueOf("e56666"),
 });
 
 const hawkOrb = extend(BasicBulletType, {
-    width : 18,
-    height: 18,
+    width : 6,
+    height: 6,
 
     damage : 75,
     speed : 1,
-    shrinkY: -0.5,
-    shrinkX: -0.5,
-    spin: 0.3,
+    shrinkY: -0.2,
+    shrinkX: -0.2,
     lifetime : 100,
     sprite: "circle-bullet",
     pierce : true,
 
     despawnEffect : redBlast,
-    shootEffect : hawkOrbEffect,
+    trailEffect: hawkOrbEffect,
+    trailSpacing: 99999,
     parentizeEffects: true,
     hitEffect: Fx.none,
     frontColor : Color.valueOf("e56666"),
