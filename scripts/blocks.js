@@ -44,6 +44,6 @@ const rip = extend(PowerTurret, "rip", {
     shootType: ripDisk,
 });
 
-// ?
+// crow
 
 // end luxDuck's content
